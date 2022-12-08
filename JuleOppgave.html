@@ -1,0 +1,19 @@
+<script>
+    let dag = window.prompt("Hvilken dato i desember er det? 1-31");
+    if (dag >= 1 && dag <= 31) {
+        if (dag == 24) {
+            console.log("det er julaften")
+        }
+        else if (dag < 24) {
+            let dagerTil = 24-dag
+            console.log("det er",dagerTil,"dager til julaften")
+        }
+        else {
+            let dagerSiden = dag-24
+            console.log("julaften var", dagerSiden, "dager siden")
+        }
+    }
+    else{
+        console.log("det er ikke gyldig svar")
+    }
+</script>
